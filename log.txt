@@ -1,0 +1,8 @@
+time=2025-02-08T16:51:40.530+05:30 level=DEBUG source=/home/jala/projects/NotionAutomator/packages/logging/log.go:25 msg=Debugging !BADKEY=abcd
+time=2025-02-08T16:58:36.142+05:30 level=DEBUG source=/home/jala/projects/NotionAutomator/packages/logging/log.go:25 msg=sd,jfndhb
+time=2025-02-08T17:07:41.603+05:30 level=DEBUG source=/home/jala/projects/NotionAutomator/packages/logging/log.go:25 msg=sd,jfndhb
+time=2025-02-10T14:57:07.148+05:30 level=DEBUG source=/home/jala/projects/NotionAutomator/packages/logging/log.go:24 msg=dfgnfdjng
+time=2025-02-10T15:12:53.809+05:30 level=DEBUG msg=dfgnfdjng
+time=2025-02-10T15:15:15.367+05:30 level=DEBUG msg=dfgnfdjng
+time=2025-02-10T15:35:00.331+05:30 level=DEBUG msg=dfgnfdjng
+time=2025-02-10T16:05:35.839+05:30 level=DEBUG msg=jalaaa
