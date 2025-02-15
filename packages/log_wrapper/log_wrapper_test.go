@@ -1,12 +1,19 @@
-package logging_test
+package log_wrapper_test
 
 import (
 	"bufio"
 	"bytes"
-	"jalar/notionAutomator/packages/logging"
+	"io"
+	"log/slog"
 	"strings"
 	"testing"
 )
+
+func createSlogLogger(w io.Writer) *slog.Logger {
+	return slog.New(slog.NewTextHandler(w, &slog.HandlerOptions{
+		Level: slog.LevelDebug,
+	}))
+}
 
 func TestDebug(t *testing.T) {
 
@@ -14,10 +21,10 @@ func TestDebug(t *testing.T) {
 	var (
 		buffer         = bytes.NewBuffer([]byte{})
 		logMsg         = "test1 from test"
-		logMockService = logging.MockLogSerivce(buffer)
+		logMockService = createSlogLogger(buffer)
 	)
 
-	logging.Debug(logMsg, logMockService)
+	logMockService.Debug(logMsg)
 
 	//verification
 	result, err := getLogDetails(buffer)
@@ -38,10 +45,10 @@ func TestWarn(t *testing.T) {
 	var (
 		buffer         = bytes.NewBuffer([]byte{})
 		logMsg         = "test1 from test"
-		logMockService = logging.MockLogSerivce(buffer)
+		logMockService = createSlogLogger(buffer)
 	)
 
-	logging.Warn(logMsg, logMockService)
+	logMockService.Warn(logMsg)
 
 	//verification
 	result, err := getLogDetails(buffer)
@@ -62,10 +69,10 @@ func TestError(t *testing.T) {
 	var (
 		buffer         = bytes.NewBuffer([]byte{})
 		logMsg         = "test1 from test"
-		logMockService = logging.MockLogSerivce(buffer)
+		logMockService = createSlogLogger(buffer)
 	)
 
-	logging.Error(logMsg, logMockService)
+	logMockService.Error(logMsg)
 
 	//verification
 	result, err := getLogDetails(buffer)
@@ -86,10 +93,10 @@ func TestInfo(t *testing.T) {
 	var (
 		buffer         = bytes.NewBuffer([]byte{})
 		logMsg         = "test1 from test"
-		logMockService = logging.MockLogSerivce(buffer)
+		logMockService = createSlogLogger(buffer)
 	)
 
-	logging.Info(logMsg, logMockService)
+	logMockService.Info(logMsg)
 
 	//verification
 	result, err := getLogDetails(buffer)

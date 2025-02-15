@@ -1,9 +1,15 @@
 package main
 
 import (
-	"jalar/notionAutomator/packages/logging"
+	"fmt"
+	"jalar/notionAutomator/packages/handlers"
+	"net/http"
 )
 
 func main() {
-	logging.Debug("jalaaa", logging.LogSerive)
+	handlers.RegisterHandlers()
+
+	fmt.Println("Server starting in 80")
+	http.ListenAndServe(":80", nil)
+
 }

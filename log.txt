@@ -6,3 +6,14 @@ time=2025-02-10T15:12:53.809+05:30 level=DEBUG msg=dfgnfdjng
 time=2025-02-10T15:15:15.367+05:30 level=DEBUG msg=dfgnfdjng
 time=2025-02-10T15:35:00.331+05:30 level=DEBUG msg=dfgnfdjng
 time=2025-02-10T16:05:35.839+05:30 level=DEBUG msg=jalaaa
+time=2025-02-11T11:53:38.314+05:30 level=INFO msg="Added item to board devin suthu adi"
+time=2025-02-12T19:30:19.894+05:30 level=ERROR msg="Got error at GetAllpeople got Error status code 401 with message {\"object\":\"error\",\"status\":401,\"code\":\"unauthorized\",\"message\":\"API token is invalid.\",\"request_id\":\"ae28af55-5333-440b-a4c0-33339a0d4db9\"}"
+time=2025-02-12T19:33:05.065+05:30 level=INFO msg="Added item to board title: fddfbfgb-Script"
+time=2025-02-12T19:33:05.720+05:30 level=INFO msg="Added item to board title: fddfbfgb-Title & Thumbnail"
+time=2025-02-12T19:33:06.728+05:30 level=INFO msg="Added item to board title: fddfbfgb-Edit"
+time=2025-02-12T19:33:08.186+05:30 level=INFO msg="Added item to board title: fddfbfgb-Schedule"
+time=2025-02-12T19:43:41.014+05:30 level=INFO msg="Added item to board title: [Lumi]-Video-31/02-Script"
+time=2025-02-12T19:43:41.586+05:30 level=INFO msg="Added item to board title: [Lumi]-Video-31/02-Title & Thumbnail"
+time=2025-02-12T19:43:42.143+05:30 level=INFO msg="Added item to board title: [Lumi]-Video-31/02-Edit"
+time=2025-02-12T19:43:43.156+05:30 level=INFO msg="Added item to board title: [Lumi]-Video-31/02-Schedule"
+time=2025-02-13T12:26:25.472+05:30 level=ERROR msg="Got error at GetAllpeople got Error status code 401 with message {\"object\":\"error\",\"status\":401,\"code\":\"unauthorized\",\"message\":\"API token is invalid.\",\"request_id\":\"82641450-1786-4aa7-8e03-3b93854601b2\"}"
